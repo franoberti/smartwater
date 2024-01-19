@@ -1,0 +1,10 @@
+.app {
+    display: flex;
+}
+
+
+.content {
+    margin-left: 240px;
+    flex-grow: 1;
+    padding: 20px;
+}

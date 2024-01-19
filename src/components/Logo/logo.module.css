@@ -1,0 +1,23 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smart {
+    color: var(--Azul-claro, #52A5F5);
+    font-family: "Baloo Bhaijaan 2", sans-serif;;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.water {
+    color: #FCFDFF;
+    font-family: "Baloo Bhaijaan 2", sans-serif;;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

@@ -1,0 +1,85 @@
+.container {
+    border: 1px solid #D6D5D5;
+    border-radius: 30px;
+    padding: 10px 15px;
+    width: 214px;
+}
+
+.title {
+    color: #222;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    margin: 10px 0;
+}
+
+.valueContainer {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.value {
+    color: #1A3D7D;
+    margin: 0;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.unity {
+    color: #1A3D7D;
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.percentageContainer {
+    padding: 5px;
+    border-radius: 10px;
+    background: #D5FFD4;
+}
+
+.percentage {
+    color: #0D970A;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.percentageContainerWrong {
+    padding: 5px;
+    border-radius: 10px;
+    background: #FFD4D4;
+}
+
+.percentageWrong {
+    color: #A1140B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.percentageDescription {
+    margin-left: 5px !important;
+    color: #777;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
