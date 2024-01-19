@@ -11,6 +11,7 @@
 
 .titleText {
     margin-left: 20px;
+    margin-bottom: 0;
     color: var(--Negro, #1B1B1B);
     text-align: center;
     font-family: Poppins;

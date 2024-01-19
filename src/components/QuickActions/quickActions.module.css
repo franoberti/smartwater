@@ -1,0 +1,17 @@
+.container {
+    margin-top: 20px;
+}
+
+.containerActions {
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
