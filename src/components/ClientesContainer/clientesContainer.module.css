@@ -21,8 +21,16 @@
 
 }
 
-
 @media only screen and (max-width: 768px) {
+
+    .container {
+        max-width: 270px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
 
     .container {
         min-width: 390px;

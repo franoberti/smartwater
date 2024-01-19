@@ -23,3 +23,16 @@
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container{
+        overflow: scroll;
+        min-width: 275px;
+    }
+
+}
