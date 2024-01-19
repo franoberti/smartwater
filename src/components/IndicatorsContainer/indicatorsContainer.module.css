@@ -5,18 +5,6 @@
     overflow: auto;
 }
 
-@media only screen and (max-width: 576px) {
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .container{
-        overflow: scroll;
-    }
-
-}
-
 @media only screen and (max-width: 768px) {
 
     ::-webkit-scrollbar {
@@ -29,19 +17,7 @@
 
 }
 
-@media only screen and (max-width: 992px) {
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .container{
-        overflow: scroll;
-    }
-
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
 
     ::-webkit-scrollbar {
         display: none;

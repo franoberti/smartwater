@@ -9,15 +9,6 @@
     padding: 20px;
 }
 
-@media only screen and (max-width: 576px) {
-
-    .content {
-        margin-left: 60px;
-        padding: 20px;
-        overflow-x: auto; 
-    }
-
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -29,17 +20,7 @@
 
 }
 
-@media only screen and (max-width: 992px) {
-
-    .content {
-        margin-left: 240px;
-        padding: 20px;
-        overflow-x: auto; 
-    }
-
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
 
     .content {
         margin-left: 240px;

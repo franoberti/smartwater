@@ -130,26 +130,6 @@
     line-height: normal;
 }
 
-@media only screen and (max-width: 576px) {
-
-    .container {
-        max-width: 270px;
-    }
-
-    .quantityPrice{
-        flex-direction: column;
-    }
-
-    .quiantity {
-        width: 100%;
-    }
-    
-    .price {
-        width: 100%;
-    }
-
-}
-
 @media only screen and (max-width: 768px) {
 
     .container {
@@ -170,16 +150,10 @@
 
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) {
 
     .container {
         min-width: 390px;
     }
-}
 
-@media only screen and (max-width: 1200px) {
-
-    .container {
-        min-width: 390px;
-    }
 }

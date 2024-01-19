@@ -13,14 +13,6 @@
     gap: 20px;
 }
 
-@media only screen and (max-width: 576px) {
-
-    .container {
-        max-width: 270px;
-    }
-
-}
-
 @media only screen and (max-width: 768px) {
 
     .container {
@@ -29,16 +21,7 @@
 
 }
 
-
-@media only screen and (max-width: 992px) {
-
-    .container {
-        min-width: 390px;
-    }
-
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
 
     .container {
         min-width: 390px;
