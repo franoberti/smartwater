@@ -7,16 +7,16 @@
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
-  }
+}
 
-.btnContainer{
+.btnContainer {
     display: flex;
     flex-direction: column;
     padding: 5px;
     gap: 10px;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -25,26 +25,28 @@
     border-radius: 5px;
 }
 
-.btnSelected{
+.btnSelected {
     background-color: #FFF;
-    color: #222  !important;
+    color: #222 !important;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #153063; /* Cambia esto al color que desees */
+    background-color: #153063;
+    /* Cambia esto al color que desees */
 }
 
 .btnSelected:hover {
-    background-color: #FFF; /* Cambia esto al color que desees */
+    background-color: #FFF;
+    /* Cambia esto al color que desees */
 }
 
-.btnTextSelected{
+.btnTextSelected {
     margin: 0;
     color: #222 !important;
 }
 
-.btnIcon{
+.btnIcon {
     margin-right: 15px;
     max-width: 24px;
     max-height: 24px;
@@ -59,3 +61,53 @@
     line-height: normal;
 }
 
+.sidebarMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 948px) {}
+
+@media only screen and (max-width: 576px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebarMobile {
+        display: block;
+        position: fixed;
+        width: 60px;
+        height: 100vh;
+        background-color: #1A3D7D;
+        color: white;
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bars {
+        margin-top: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .itemsMobile {
+        width: 20px;
+        z-index: 2;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        width: 240px;
+        height: 100vh;
+        background-color: #1A3D7D;
+        color: white;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
