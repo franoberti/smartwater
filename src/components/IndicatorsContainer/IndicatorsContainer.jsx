@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './indicatorsContainer.module.css'
 import Indicator from '../Indicator/Indicator.jsx';
 
-const IndicatorsContainer = () => {
+const IndicatorsContainer = ({ price, onChangePriceRecived }) => {
 
     /* Creo este array simulando que vienen datos de la BD */
-    const indicators = [
+    const [indicators, setIndicators] = useState([
         {
             title: "Clientes nuevos",
             value: 18,
@@ -34,7 +34,24 @@ const IndicatorsContainer = () => {
             percentage: 8.2,
             wrong: false,
         }
-    ]
+    ])
+
+
+    useEffect(() => {
+        if(!price){
+            price = 0
+        }
+        onChangePriceRecived(price);
+        console.log('DATO EN INDICATORS: ', price)
+        const newIndicators = [...indicators];
+
+        newIndicators[2].value = newIndicators[2].value + 1;
+        console.log(newIndicators[3].value)
+        newIndicators[3].value = newIndicators[3].value + parseFloat(price);
+        console.log(newIndicators[3].value)
+
+        setIndicators(newIndicators);
+    }, [price, onChangePriceRecived]);
 
     return (
         <div className={`${styles.container}`}>

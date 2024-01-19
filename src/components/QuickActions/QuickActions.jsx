@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './quickActions.module.css'
 import ClientesContainer from '../ClientesContainer/ClientesContainer';
 import RealizarPedidos from '../RealizarPedidos/RealizarPedidos';
 
-const QuickActions = () => {
+const QuickActions = ({setPricePedido}) => {
+    
+    
+
     return (
         <div className={`${styles.container}`}>
             <h3 className={`${styles.title}`}>Acciones Rapidas</h3>
             <div className={`${styles.containerActions}`}>
                 <ClientesContainer />
-                <RealizarPedidos />
+                <RealizarPedidos setPricePedido={setPricePedido}/>
                 <div className={`${styles.containerSection}`}>
                 </div>
             </div>
