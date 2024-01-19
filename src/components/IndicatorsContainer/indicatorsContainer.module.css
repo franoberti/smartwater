@@ -2,4 +2,29 @@
     margin-top: 20px;
     display: flex;
     gap: 20px;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 576px) {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container{
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container{
+        overflow: scroll;
+    }
+
 }

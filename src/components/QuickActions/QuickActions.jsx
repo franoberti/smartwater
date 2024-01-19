@@ -10,6 +10,8 @@ const QuickActions = () => {
             <div className={`${styles.containerActions}`}>
                 <ClientesContainer />
                 <RealizarPedidos />
+                <div className={`${styles.containerSection}`}>
+                </div>
             </div>
         </div>
     );

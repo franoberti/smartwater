@@ -4,6 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Navbar from '../Navbar/Navbar';
 import IndicatorsContainer from '../IndicatorsContainer/IndicatorsContainer';
 import QuickActions from '../QuickActions/QuickActions';
+import Stats from '../Stats/Stats';
 
 const Home = () => {
     return (
@@ -15,7 +16,7 @@ const Home = () => {
                 <Navbar/>
                 <IndicatorsContainer/>
                 <QuickActions/>
-
+                <Stats/>
             </div>
         </div>
     );

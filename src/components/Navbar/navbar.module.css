@@ -20,3 +20,27 @@
     font-weight: 700;
     line-height: 100%;
 }
+
+.notifIcon{
+    width: 59px;
+    height: 59px; 
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .notifIcon{
+        width: 49px;
+        height: 49px; 
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .notifIcon{
+        width: 49px;
+        height: 49px; 
+    }
+
+}

@@ -13,8 +13,18 @@
 
     .content {
         margin-left: 60px;
-        flex-grow: 1;
         padding: 20px;
+        overflow-x: auto; 
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .content {
+        margin-left: 240px;
+        padding: 20px;
+        overflow-x: auto; 
     }
 
 }
