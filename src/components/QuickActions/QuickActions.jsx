@@ -3,7 +3,7 @@ import styles from './quickActions.module.css'
 import ClientesContainer from '../ClientesContainer/ClientesContainer';
 import RealizarPedidos from '../RealizarPedidos/RealizarPedidos';
 
-const QuickActions = ({setPricePedido}) => {
+const QuickActions = () => {
     
     
 
@@ -12,7 +12,7 @@ const QuickActions = ({setPricePedido}) => {
             <h3 className={`${styles.title}`}>Acciones Rapidas</h3>
             <div className={`${styles.containerActions}`}>
                 <ClientesContainer />
-                <RealizarPedidos setPricePedido={setPricePedido}/>
+                <RealizarPedidos />
                 <div className={`${styles.containerSection}`}>
                 </div>
             </div>

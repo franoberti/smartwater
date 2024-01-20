@@ -9,23 +9,6 @@ import { useState, useEffect } from 'react';
 
 const Home = () => {
 
-    const [pricePedidoRecibido, setPricePedidoRecibido] = useState('');
-
-    const getPricePedido = (price) => {        
-        setPricePedidoRecibido(price);
-      };
-
-      const handleChangePrice = () =>{
-        return pricePedidoRecibido
-      }
-
-      const handleChangePriceRecived = (newPrice) => {
-      };
-
-      useEffect(() => {
-        handleChangePriceRecived(pricePedidoRecibido);
-      }, [pricePedidoRecibido]);
-
     return (
         <div className={`${styles.app}`}>
 
@@ -33,8 +16,8 @@ const Home = () => {
 
             <div className={`${styles.content}`}>
                 <Navbar/>
-                <IndicatorsContainer price={parseFloat(pricePedidoRecibido)} onChangePriceRecived={handleChangePriceRecived}/>
-                <QuickActions setPricePedido={getPricePedido}/>
+                <IndicatorsContainer />
+                <QuickActions />
                 <Stats/>
             </div>
         </div>

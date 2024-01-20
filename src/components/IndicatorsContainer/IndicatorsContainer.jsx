@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './indicatorsContainer.module.css'
 import Indicator from '../Indicator/Indicator.jsx';
+import { useGlobal } from '../../context/GlobalProvider.jsx';
 
 const IndicatorsContainer = ({ price, onChangePriceRecived }) => {
 
@@ -37,21 +38,26 @@ const IndicatorsContainer = ({ price, onChangePriceRecived }) => {
     ])
 
 
+    const { globalSignal, setGlobalSignal } = useGlobal()
+    const { globalPrice, setGlobalPrice } = useGlobal();
+
+
     useEffect(() => {
-        if(!price){
-            price = 0
+        if (!globalPrice) {
+            setGlobalPrice(0)
         }
-        onChangePriceRecived(price);
-        console.log('DATO EN INDICATORS: ', price)
+
         const newIndicators = [...indicators];
 
         newIndicators[2].value = newIndicators[2].value + 1;
         console.log(newIndicators[3].value)
-        newIndicators[3].value = newIndicators[3].value + parseFloat(price);
+        newIndicators[3].value = newIndicators[3].value + parseFloat(globalPrice);
         console.log(newIndicators[3].value)
 
         setIndicators(newIndicators);
-    }, [price, onChangePriceRecived]);
+
+    }, [globalSignal ,globalPrice])
+
 
     return (
         <div className={`${styles.container} row`}>

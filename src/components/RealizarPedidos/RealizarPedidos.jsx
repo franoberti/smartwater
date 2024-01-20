@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styles from './realizarPedidos.module.css'
 import ActionHeader from '../ActionHeader/ActionHeader';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useGlobal } from '../../context/GlobalProvider.jsx';
 
-const RealizarPedidos = ({setPricePedido}) => {
+const RealizarPedidos = ({ setPricePedido }) => {
+
+  const { globalPrice, setGlobalPrice } = useGlobal();
+  const { globalSignal, setGlobalSignal } = useGlobal()
 
   const clientes = [
     {
@@ -71,7 +77,9 @@ const RealizarPedidos = ({setPricePedido}) => {
   }, [number]);
 
   const handleRealizarPedido = () => {
-    setPricePedido(price)
+    setGlobalPrice(price)
+    setGlobalSignal(!globalSignal)
+    toast.success('Operación realizada con éxito');
   }
 
   return (
