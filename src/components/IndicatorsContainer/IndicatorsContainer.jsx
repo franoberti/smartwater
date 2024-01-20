@@ -54,7 +54,7 @@ const IndicatorsContainer = ({ price, onChangePriceRecived }) => {
     }, [price, onChangePriceRecived]);
 
     return (
-        <div className={`${styles.container}`}>
+        <div className={`${styles.container} row`}>
             {/* Recorro el array para crear los distintos indicadores */}
             {indicators.map((indicator, index) => (
                 <Indicator

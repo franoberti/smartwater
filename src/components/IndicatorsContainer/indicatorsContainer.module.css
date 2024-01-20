@@ -13,6 +13,7 @@
 
     .container{
         overflow: scroll;
+        display: flex;
     }
 
 }
