@@ -1,10 +1,10 @@
-import React, {useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './sidebar.module.css'
 import Logo from '../Logo/Logo';
 import camionIcon from '../../assets/camion.png'
 import BtnSalir from '../BtnSalir/BtnSalir';
 
-const Sidebar = ({visible}) => {
+const Sidebar = ({ visible }) => {
 
   const [visibleSidebar, setVisibleSidebar] = useState(false)
 
@@ -15,7 +15,7 @@ const Sidebar = ({visible}) => {
   const handleClickBars = () => {
     setVisibleSidebar(!visibleSidebar)
   }
-  
+
   useEffect(() => {
     setVisibleSidebar(visible)
   }, [visible])
@@ -164,11 +164,11 @@ const Sidebar = ({visible}) => {
             <p className={`${styles.btnText}`}>Configuración</p>
           </div>
 
+          <BtnSalir></BtnSalir>
         </div>
-        <BtnSalir></BtnSalir>
       </div>
 
-  
+
     </>
   );
 }

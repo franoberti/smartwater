@@ -41,7 +41,6 @@ const ClientesContainer = () => {
 
       <ActionHeader title={"Clientes"} subtitle={"Vista rapida"}/>
 
-
       <div className={`${styles.body}`}>
         {clientes.map((cliente, index) => (
           <Cliente
