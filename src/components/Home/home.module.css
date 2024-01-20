@@ -13,7 +13,7 @@
 @media only screen and (max-width: 768px) {
 
     .content {
-        margin-left: 60px;
+        margin-left: 0;
         padding: 20px;
         overflow-x: auto; 
     }
