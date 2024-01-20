@@ -92,13 +92,13 @@
         border: 1px solid #D6D5D5;
         border-radius: 30px;
         padding: 10px 15px;
-        margin-top: 10px;
         min-width: 0;
-        width: 47%;
+        width: 48%;
     }
 
     .title {
         margin: 5px 0;
+        font-size: 12px;
     }
 
     .value {
@@ -117,6 +117,10 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+    }
+
+    .percentageDescription {
+        font-size: 10px;
     }
 
 }
